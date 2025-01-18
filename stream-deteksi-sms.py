@@ -16,6 +16,7 @@ clean_teks = st.text_input('Masukkan Teks SMS')
 
 spam_detection = ''
 
+# membuat tombol
 if st.button('Cek SMS'):
     predict_spam = model_spam.predict(loaded_vec.fit_transform([clean_teks]))
 
